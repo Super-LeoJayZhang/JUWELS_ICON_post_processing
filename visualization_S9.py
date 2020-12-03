@@ -42,7 +42,7 @@ def calculate_turbulent(ds):
 # Parameters.
 # ------------------
 g = 9.8  # [m/s-2]
-cp = 1004.64
+cp = 1004.64    # heat capacity
 
 # ---------------------------------
 # Work Direction and file path.
