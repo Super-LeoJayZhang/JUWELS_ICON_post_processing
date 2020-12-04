@@ -33,6 +33,7 @@ if [ ! -d $FOLDER_REMAP ]
 then
         mkdir $FOLDER_REMAP
 fi
+cd $FOLDER_REMAP
 export TARGET_GRID_DESCRIPTION=$FOLDER_REMAP/grid_description_x192_y192_e70m
 export WEIGHTS_FILE=$FOLDER_REMAP/weights_torus_x192_y192_e70m.nc
 
