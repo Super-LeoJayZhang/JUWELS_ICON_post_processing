@@ -119,10 +119,10 @@ rho = nc_insta['rho'][:, -1, :, :]  # Air Density at the lowest layer.
 
 shfl_s_avg = np.mean(np.mean(shfl_s, -1), -1)   # Domain-average.
 
-pbl = z_mc[np.argmin(wth[24, :])]  # Let's assume the time 6h.
+pbl = z_mc[np.argmin(wth[48, :])]  # at the time 12h.
 
 # convective velocity scale.
-w_star = ((g / tsfc[24, :, :]) * pbl * (-shfl_s_avg[24] / (rho[24, :, :] * cp))) ** (1 / 3)
+w_star = ((g / tsfc[48, :, :]) * pbl * (-shfl_s_avg[48] / (rho[48, :, :] * cp))) ** (1 / 3)
 w_star = np.mean(np.array(w_star))
 
 # --------------------
